@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Git y GitHub</title>
 </head>
+<style>
+    .h1{
+        text-align: center;
+    }
+</style>
+
 <body>
     <h1>ETAPA 1 Creación</h1>
     <h2>git clone</h2>
-        <p>Este comando tiene como fin de sacar un repositorio del internet<br>con el fin de tenerlo en nuestro propio ordenador. <br><b>debes tener Git descargado en tu ordenador</b></p>
+    <p>Este comando tiene como fin de sacar un repositorio del internet<br>con el fin de tenerlo en nuestro propio
+        ordenador. <br><b>debes tener Git descargado en tu ordenador</b></p>
     <h3>Ejecutación</h3>
-        <p>git clone [URL del repositorio] </p>
+    <p>git clone [URL del repositorio] </p>
     <br>
-
     <h3>Comandos de utilidad: </h3>
     <ul>
-        <li><b>Usa start  [Nombre del repositorio] : para verlo en el localhost</b></li>
-        <li><p>cd [Repositorio]: Es entrar</p></li>
-        <li><p>echo. > [Nombre del Archivo]: Creas el archivo</p></li>
-        <li><p>code . : Te muestra lo que contiene</p></li>
-        <li><p>cd .. : cierra el archivo</p></li>
-        <li>ren [Nombre del archivo anterior] [Nuevo] cambiamos el nombre de la carpeta</p></li>
+        <li><b>Usa start [Nombre del repositorio] : para verlo en el localhost</b></li>
+        <li>
+            <p>cd [Repositorio]: Es entrar</p>
+        </li>
+        <li>
+            <p>echo. > [Nombre del Archivo]: Creas el archivo</p>
+        </li>
+        <li>
+            <p>code . : Te muestra lo que contiene</p>
+        </li>
+        <li>
+            <p>cd .. : cierra el archivo</p>
+        </li>
+        <li>ren [Nombre del archivo anterior] [Nuevo] cambiamos el nombre de la carpeta</p>
+        </li>
     </ul>
     <br>
     <br>
     <h1>ETAPA 2 Commit </h1>
     <h2>git add</h2>
-        <p>Este comando prepara los archivos para ser confirmados (commit).<br>
+    <p>Este comando prepara los archivos para ser confirmados (commit).<br>
         En otras palabras: le dice a Git “quiero que estos cambios entren en el próximo commit”. </p>
     <h3>Ejecutación</h3>
     <p>git add index.html : Añadir un archivo especifico </p>
@@ -39,7 +55,7 @@
     <p>confirma todos los archivos modificados <b>No agrega archivos nuevos</b></p>
     <br>
     <p><b>Tip: Para archivos nuevos, siempre hay que hacer git add antes.
-    Para archivos ya rastreados, -am ahorra un paso.</b></p>
+            Para archivos ya rastreados, -am ahorra un paso.</b></p>
     <br>
     <h1>ETAPA 3 git status </h1>
     <p>Te muestra el estado del repositorio:</p>
@@ -54,7 +70,9 @@
     <p>Sube tus commits desde tu ordenador → a GitHub</p>
     <br>
     <h1>ETAPA 5 git pull </h1>
-    <p>trae los cambios del repositorio remoto (GitHub) y los mezcla con tu rama local.<br>Antes de trabajar: git pull <br>Antes de subir:git pull/git push</p>
+    <p>trae los cambios del repositorio remoto (GitHub) y los mezcla con tu rama local.<br>Antes de trabajar: git pull
+        <br>Antes de subir:git pull/git push
+    </p>
     <br>
     <h1>ETAPA 6</h1>
     <h5>Comandos practicos:</h5>
@@ -91,12 +109,21 @@
         </li>
         <li><b>git diff:</b>muestra las diferencias entre tus archivos y lo que está en Git.
             <ul>
-                <li>git diff: Te muestra los cambios en los archivos modificados, pero que todavía no agregaste con<b>git add.</b></li>
-                <li>git diff --staged: Te muestra los cambios que ya agregaste con git add y que se incluirán en el próximo commit.</li>
+                <li>git diff: Te muestra los cambios en los archivos modificados, pero que todavía no agregaste
+                    con<b>git add.</b></li>
+                <li>git diff --staged: Te muestra los cambios que ya agregaste con git add y que se incluirán en el
+                    próximo commit.</li>
                 <li>git diff commit1 commit2: Ver cambios entre commits</li>
             </ul>
         </li>
     </ul>
     <br>
+    <h1>ETAPA 6 Las ramas</h1>
+    <p>Te permiten trabajar en algo sin afectar main.</p>
+    <ul>
+        <li><b> git branch:</b>Muestra las ramas que existen en tu repositorio.</li>
+        <li><b> git checkout -b ""</b>Crear y cambiar en un solo paso</li>
+    </ul>
 </body>
+
 </html>
