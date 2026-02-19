@@ -14,7 +14,6 @@
     <br>
 
     <h3>Comandos de utilidad: </h3>
-    <h3 style="color: red;">Comandos de utilidad</h3>
     <ul>
         <li><b>Usa start  [Nombre del repositorio] : para verlo en el localhost</b></li>
         <li><p>cd [Repositorio]: Es entrar</p></li>
@@ -54,6 +53,50 @@
     <h1>ETAPA 4 git push </h1>
     <p>Sube tus commits desde tu ordenador → a GitHub</p>
     <br>
-
+    <h1>ETAPA 5 git pull </h1>
+    <p>trae los cambios del repositorio remoto (GitHub) y los mezcla con tu rama local.<br>Antes de trabajar: git pull <br>Antes de subir:git pull/git push</p>
+    <br>
+    <h1>ETAPA 6</h1>
+    <h5>Comandos practicos:</h5>
+    <ul>
+        <li><b>git log:</b>Muestra el historial de commits de tu repositorio.<br>
+            <ul>
+                <li>Entre fechas</li>
+                <li>fecha especifica</li>
+                <li>Usuario especifico</li>
+                <li>Del día</li>
+            </ul>
+        </li>
+        <li><b>git reset:</b>Sirve para mover el HEAD (el puntero actual) a otro commit(Deshace Commit)
+            <ul>
+                <li>git reset --soft HEAD~1 : Deshace el último commit PERO:
+                    <ul>
+                        <li>Mantiene los cambios</li>
+                        <li>Los deja listos para volver a hacer commit</li>
+                    </ul>
+                </li>
+                <li>git reset HEAD~1 : Deshaz el commit pero deja el archivo modificado
+                    <ul>
+                        <li>Quita los archivos del staging</li>
+                        <li>Pero mantiene los cambios en el código</li>
+                    </ul>
+                </li>
+                <li>git reset --hard HEAD~1 : Quiero que esto nunca haya pasado
+                    <ul>
+                        <li>Borra los cambios del archivo</li>
+                        <li>Regresa todo exactamente como estaba</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><b>git diff:</b>muestra las diferencias entre tus archivos y lo que está en Git.
+            <ul>
+                <li>git diff: Te muestra los cambios en los archivos modificados, pero que todavía no agregaste con<b>git add.</b></li>
+                <li>git diff --staged: Te muestra los cambios que ya agregaste con git add y que se incluirán en el próximo commit.</li>
+                <li>git diff commit1 commit2: Ver cambios entre commits</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
 </body>
 </html>
