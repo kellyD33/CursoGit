@@ -17,32 +17,24 @@
 </style>
 
 <body>
+    <h3>Comandos de utilidad: CMD Y Linux </h3>
+    <ul>
+        <li><b>cd [Repositorio]</b> ingresar a la carpeta</li>
+        <li><b>code .</b> abre Visual Studio Code en esa carpeta</li>
+        <li><b>start [Nombre del repositorio]</b> → <b>xdg-open [Nombre del repositorio]</b> (abre la carpeta o proyecto, dependiendo del sistema)</li>
+        <li><b>"" > archivo.txt</b> → <b>touch archivo.txt</b> (crea un archivo)</li>
+        <li><b>mkdir [Nombre Carpeta]</b> crea una carpeta</li>
+        <li><b>ren [Archivo anterior] [Nuevo]</b> → <b>mv [Archivo anterior] [Nuevo]</b> (cambia nombre de archivo o carpeta)</li>
+        <li><b>dir</b> → <b>ls</b> (lista archivos y carpetas)</li>
+        <li><b>cd ..</b> sube un nivel de carpeta</li>
+    </ul>
+    <br>
     <h1>ETAPA 1 Creación</h1>
     <h2>git clone</h2>
     <p>Este comando tiene como fin de sacar un repositorio del internet<br>con el fin de tenerlo en nuestro propio
         ordenador. <br><b>debes tener Git descargado en tu ordenador</b></p>
     <h3>Ejecutación</h3>
     <p>git clone [URL del repositorio] </p>
-    <h3>Comandos de utilidad: </h3>
-    <ul>
-        <li><b>Usa start [Nombre del repositorio] : para verlo en el localhost</b></li>
-        <li>
-            <p>cd [Repositorio]: Es entrar</p>
-        </li>
-        <li>
-            <p>echo. > [Nombre del Archivo]: Creas el archivo</p>
-        </li>
-        <li>
-            <p>code . : Te muestra lo que contiene</p>
-        </li>
-        <li>
-            <p>cd .. : cierra el archivo</p>
-        </li>
-        <li>ren [Nombre del archivo anterior] [Nuevo] cambiamos el nombre de la carpeta</p>
-        </li>
-    </ul>
-    <br>
-    <br>
     <h1>ETAPA 2 Commit </h1>
     <h2>git add</h2>
     <p>Este comando prepara los archivos para ser confirmados (commit).<br>
@@ -55,7 +47,7 @@
     <h2>git commit -m "mensaje del cambio"</h2>
     <p>confirmas los cambios añadidos con git add</p>
     <h2>git commit -am "mensaje del cambio"</h2>
-    <p>confirma todos los archivos modificados <b>No agrega archivos nuevos</b></p>
+    <p>confirma todos los archivos modificadoso agrega archivos nuevos</b></p>
     <br>
     <p><b>Tip: Para archivos nuevos, siempre hay que hacer git add antes.
             Para archivos ya rastreados, -am ahorra un paso.</b></p>
